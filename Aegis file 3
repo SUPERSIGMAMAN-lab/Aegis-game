@@ -1,0 +1,30 @@
+let score = 0;
+
+function startRocket(){
+  document.getElementById("menu").classList.add("hidden");
+  document.getElementById("game").classList.remove("hidden");
+  document.getElementById("modeTitle").innerText = "🚀 Rocket Engineering Lab";
+  document.getElementById("description").innerText =
+    "Design a rocket using physics variables: thrust, mass, fuel, aerodynamics, and stability.";
+}
+
+function startDisaster(){
+  document.getElementById("menu").classList.add("hidden");
+  document.getElementById("game").classList.remove("hidden");
+  document.getElementById("modeTitle").innerText = "🌪 Disaster Engineering Lab";
+  document.getElementById("description").innerText =
+    "Build systems to protect cities from earthquakes, floods, hurricanes, and wildfires.";
+}
+
+function runSimulation(){
+  let gain = Math.floor(Math.random()*100)+20;
+  score += gain;
+  document.getElementById("score").innerText = score;
+}
+
+function back(){
+  score = 0;
+  document.getElementById("score").innerText = score;
+  document.getElementById("game").classList.add("hidden");
+  document.getElementById("menu").classList.remove("hidden");
+}
