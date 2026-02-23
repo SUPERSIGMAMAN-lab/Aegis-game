@@ -1,0 +1,32 @@
+body {
+  background:#0b0f1a;
+  font-family: Arial;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.app{
+  background:#121a2f;
+  padding:30px;
+  border-radius:15px;
+  width:350px;
+  text-align:center;
+}
+
+button{
+  padding:10px 15px;
+  margin:10px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.hidden{display:none;}
+
+.controls{
+  margin-top:15px;
+}
