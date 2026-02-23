@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aegis: Rocket & Disaster Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Aegis: Rocket & Disaster Lab</h1>
+
+    <div id="menu">
+      <button onclick="startRocket()">🚀 Rocket Engineering</button>
+      <button onclick="startDisaster()">🌪 Disaster Engineering</button>
+    </div>
+
+    <div id="game" class="hidden">
+      <h2 id="modeTitle"></h2>
+      <p id="description"></p>
+
+      <div class="controls">
+        <button onclick="runSimulation()">Run Simulation</button>
+        <button onclick="back()">Back</button>
+      </div>
+
+      <h3>Score: <span id="score">0</span></h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
